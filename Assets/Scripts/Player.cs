@@ -50,8 +50,10 @@ public class Player : NetworkBehaviour
     /// <summary>
     /// The server will update the speed and then the client will call this message.
     /// </summary>
-    void OnChangeSpeed()
+    void OnChangeSpeed(float _old, float _new)
     {
+        Debug.Log("OnChangeSpeed::_old: " + _old);
+        Debug.Log("OnChangeSpeed::_new: " + _new);
         Debug.Log("Just got word from the server that my speed is now:" + _speed);
     }
 
