@@ -21,7 +21,7 @@ IL2CPP_EXTERN_C_END
 
 
 extern const Il2CppMethodSpec g_Il2CppMethodSpecTable[];
-const Il2CppMethodSpec g_Il2CppMethodSpecTable[27511] = 
+const Il2CppMethodSpec g_Il2CppMethodSpecTable[27512] = 
 {
 	{ 0, 0, -1 } /* System.Void <>f__AnonymousType0`1<System.Object>::.ctor(<message>j__TPar) */,
 	{ 1, 0, -1 } /* System.Boolean <>f__AnonymousType0`1<System.Object>::Equals(System.Object) */,
@@ -5181,6 +5181,7 @@ const Il2CppMethodSpec g_Il2CppMethodSpecTable[27511] =
 	{ 757, -1, 2039 } /* System.Void System.Array::Resize<TMPro.TMP_SubMeshUI>(!!0[]&,System.Int32) */,
 	{ 26581, -1, 2039 } /* System.Void TMPro.TMP_TextInfo::Resize<TMPro.TMP_SubMeshUI>(T[]&,System.Int32) */,
 	{ 14953, -1, 895 } /* !!0 UnityEngine.Component::GetComponentInParent<UnityEngine.Canvas>() */,
+	{ 14974, -1, 1001 } /* !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>() */,
 	{ 22533, -1, 49 } /* ArrayType UnityEngine.AndroidJNIHelper::ConvertFromJNIArray<System.Boolean>(System.IntPtr) */,
 	{ 22533, -1, 7 } /* ArrayType UnityEngine.AndroidJNIHelper::ConvertFromJNIArray<System.Char>(System.IntPtr) */,
 	{ 22533, -1, 84 } /* ArrayType UnityEngine.AndroidJNIHelper::ConvertFromJNIArray<System.Double>(System.IntPtr) */,

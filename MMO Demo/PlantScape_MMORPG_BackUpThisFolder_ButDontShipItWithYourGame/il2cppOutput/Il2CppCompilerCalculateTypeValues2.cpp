@@ -26238,6 +26238,10 @@ struct Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873  : public NetworkBehavio
 public:
 	// System.Single Player::_speed
 	float ____speed_12;
+	// UnityEngine.GameObject Player::_cap
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____cap_13;
+	// System.Boolean Player::_wearingHat
+	bool ____wearingHat_14;
 
 public:
 	inline static int32_t get_offset_of__speed_12() { return static_cast<int32_t>(offsetof(Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873, ____speed_12)); }
@@ -26246,6 +26250,23 @@ public:
 	inline void set__speed_12(float value)
 	{
 		____speed_12 = value;
+	}
+
+	inline static int32_t get_offset_of__cap_13() { return static_cast<int32_t>(offsetof(Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873, ____cap_13)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get__cap_13() const { return ____cap_13; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of__cap_13() { return &____cap_13; }
+	inline void set__cap_13(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		____cap_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____cap_13), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__wearingHat_14() { return static_cast<int32_t>(offsetof(Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873, ____wearingHat_14)); }
+	inline bool get__wearingHat_14() const { return ____wearingHat_14; }
+	inline bool* get_address_of__wearingHat_14() { return &____wearingHat_14; }
+	inline void set__wearingHat_14(bool value)
+	{
+		____wearingHat_14 = value;
 	}
 };
 
@@ -36282,9 +36303,11 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4371;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4371 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4372;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4372 = { sizeof (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4372[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4372[3] = 
 {
 	Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873::get_offset_of__speed_12(),
+	Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873::get_offset_of__cap_13(),
+	Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873::get_offset_of__wearingHat_14(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4373;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4373 = { sizeof (GeneratedNetworkCode_tAFAC164416C90969542981E2E2A285BC1326F624), -1, 0, 0 };
