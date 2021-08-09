@@ -5,12 +5,57 @@ using Mirror;
 
 public class Player : NetworkBehaviour
 {
+    [SyncVar(hook = "OnChangeSpeed")]
+    private float _speed;
+
+    /// <summary>
+    /// Called by server when we connect
+    /// </summary>
     public override void OnStartLocalPlayer()
     {
         base.OnStartLocalPlayer();
 
         Debug.Log("I'm connected!");
 
-        //Camera.main.transform.LookAt(transform);
+        Debug.Log("My speed on the client: " + _speed);
+
+        CmdInitPlayer();
+
+        
+    
     }
+
+    private void Update()
+    {
+        if (!isLocalPlayer)
+            return;
+
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        var move = new Vector3(h, 0, v);
+
+        transform.Translate(move * _speed * Time.deltaTime);
+    }
+
+    /// <summary>
+    /// This will run on the server
+    /// </summary>
+    [Command]
+    void CmdInitPlayer()
+    {
+        _speed = 5.0f;
+    }
+
+    /// <summary>
+    /// The server will update the speed and then the client will call this message.
+    /// </summary>
+    void OnChangeSpeed()
+    {
+        Debug.Log("Just got word from the server that my speed is now:" + _speed);
+    }
+
+
+
+
 }

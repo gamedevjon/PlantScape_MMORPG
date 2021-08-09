@@ -617,7 +617,7 @@ IL2CPP_EXTERN_C_END
 #endif
 
 // <Module>
-struct U3CModuleU3E_tB181AC380D679257A9DFE61F653774B69E5DFF6D 
+struct U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A 
 {
 public:
 
@@ -635,7 +635,7 @@ public:
 
 
 // <Module>
-struct U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A 
+struct U3CModuleU3E_tB181AC380D679257A9DFE61F653774B69E5DFF6D 
 {
 public:
 
@@ -644,15 +644,6 @@ public:
 
 
 // System.Object
-
-
-// Mirror.GeneratedNetworkCode
-struct GeneratedNetworkCode_tAFAC164416C90969542981E2E2A285BC1326F624  : public RuntimeObject
-{
-public:
-
-public:
-};
 
 
 // System.ValueType
@@ -10300,31 +10291,6 @@ public:
 
 
 // <PrivateImplementationDetails>
-struct U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA_StaticFields
-{
-public:
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24 <PrivateImplementationDetails>::898C2022A0C02FCE602BF05E1C09BD48301606E5
-	__StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0;
-
-public:
-	inline static int32_t get_offset_of_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA_StaticFields, ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0)); }
-	inline __StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  get_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() const { return ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0; }
-	inline __StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578 * get_address_of_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() { return &___898C2022A0C02FCE602BF05E1C09BD48301606E5_0; }
-	inline void set_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0(__StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  value)
-	{
-		___898C2022A0C02FCE602BF05E1C09BD48301606E5_0 = value;
-	}
-};
-
-
-// <PrivateImplementationDetails>
 struct U3CPrivateImplementationDetailsU3E_t2BDD5686E87BA22996C7749A9C7A7F86EB589380  : public RuntimeObject
 {
 public:
@@ -10345,6 +10311,31 @@ public:
 	inline void set_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0(__StaticArrayInitTypeSizeU3D12_t02D4D72A8B5221D32AB6F2F2DD8D17E86997BF22  value)
 	{
 		___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0 = value;
+	}
+};
+
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA_StaticFields
+{
+public:
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24 <PrivateImplementationDetails>::898C2022A0C02FCE602BF05E1C09BD48301606E5
+	__StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0;
+
+public:
+	inline static int32_t get_offset_of_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t8C8AAC284EEB05D4362D686B1A52C1FB562ED9FA_StaticFields, ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0)); }
+	inline __StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  get_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() const { return ___898C2022A0C02FCE602BF05E1C09BD48301606E5_0; }
+	inline __StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578 * get_address_of_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0() { return &___898C2022A0C02FCE602BF05E1C09BD48301606E5_0; }
+	inline void set_U3898C2022A0C02FCE602BF05E1C09BD48301606E5_0(__StaticArrayInitTypeSizeU3D24_t0989233B1CFEE61F6B272FB353B1B08BDE9F9578  value)
+	{
+		___898C2022A0C02FCE602BF05E1C09BD48301606E5_0 = value;
 	}
 };
 
@@ -26236,8 +26227,17 @@ public:
 struct Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873  : public NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83
 {
 public:
+	// System.Single Player::_speed
+	float ____speed_12;
 
 public:
+	inline static int32_t get_offset_of__speed_12() { return static_cast<int32_t>(offsetof(Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873, ____speed_12)); }
+	inline float get__speed_12() const { return ____speed_12; }
+	inline float* get_address_of__speed_12() { return &____speed_12; }
+	inline void set__speed_12(float value)
+	{
+		____speed_12 = value;
+	}
 };
 
 
@@ -36273,8 +36273,10 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4371;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4371 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4372;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4372 = { sizeof (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4373;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize4373 = { sizeof (GeneratedNetworkCode_tAFAC164416C90969542981E2E2A285BC1326F624), -1, 0, 0 };
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4372[1] = 
+{
+	Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873::get_offset_of__speed_12(),
+};
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
