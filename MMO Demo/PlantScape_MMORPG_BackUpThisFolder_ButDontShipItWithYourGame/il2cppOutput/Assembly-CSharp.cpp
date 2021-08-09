@@ -6652,6 +6652,24 @@ public:
 };
 
 
+// UnityEngine.KeyCode
+struct KeyCode_tC93EA87C5A6901160B583ADFCD3EF6726570DC3C 
+{
+public:
+	// System.Int32 UnityEngine.KeyCode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(KeyCode_tC93EA87C5A6901160B583ADFCD3EF6726570DC3C, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.Object
 struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0  : public RuntimeObject
 {
@@ -9357,8 +9375,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_OnStartLocalPlayer_m85F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708 (RuntimeObject * ___message0, const RuntimeMethod* method);
 // System.String System.String::Concat(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495 (RuntimeObject * ___arg00, RuntimeObject * ___arg11, const RuntimeMethod* method);
-// System.Void Player::CmdInitPlayer()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_CmdInitPlayer_mAA214C856EC53B4162D189AEF0BE5FDAEC6123BA (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873 * __this, const RuntimeMethod* method);
 // System.Boolean Mirror.NetworkBehaviour::get_isLocalPlayer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkBehaviour_get_isLocalPlayer_m543CD3F3748497B162546E3FE6569EEC4D097AA4 (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.Input::GetAxis(System.String)
@@ -9373,6 +9389,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E (const RuntimeMethod* method);
 // System.Void UnityEngine.Transform::Translate(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m0F354939D5084DDFF6B9902E62D3DCA7A3B53EA3 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___translation0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mEA57896808B6F484B12CD0AEEB83390A3CFCDBDC (int32_t ___key0, const RuntimeMethod* method);
+// System.Void Player::CmdInitPlayer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_CmdInitPlayer_mAA214C856EC53B4162D189AEF0BE5FDAEC6123BA (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873 * __this, const RuntimeMethod* method);
 // Mirror.PooledNetworkWriter Mirror.NetworkWriterPool::GetWriter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PooledNetworkWriter_t5C3E4554285FF29054146CADF86AF9057BAEECC7 * NetworkWriterPool_GetWriter_m398F819BB3EC9547E26445D3F15E39B460068A1E (const RuntimeMethod* method);
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -10375,8 +10395,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_OnStartLocalPlayer_m6D089F74AEA86
 		RuntimeObject * L_2 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_1);
 		String_t* L_3 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteral915D6A54D6353263C67F819BF99D39D05D913A56, L_2, /*hidden argument*/NULL);
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_3, /*hidden argument*/NULL);
-		// CmdInitPlayer();
-		Player_CmdInitPlayer_mAA214C856EC53B4162D189AEF0BE5FDAEC6123BA(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -10429,6 +10447,20 @@ IL_0009:
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_10 = Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E(L_8, L_9, /*hidden argument*/NULL);
 		NullCheck(L_5);
 		Transform_Translate_m0F354939D5084DDFF6B9902E62D3DCA7A3B53EA3(L_5, L_10, /*hidden argument*/NULL);
+		// if (Input.GetKeyDown(KeyCode.Space))
+		bool L_11 = Input_GetKeyDown_mEA57896808B6F484B12CD0AEEB83390A3CFCDBDC(((int32_t)32), /*hidden argument*/NULL);
+		if (!L_11)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		// CmdInitPlayer();
+		Player_CmdInitPlayer_mAA214C856EC53B4162D189AEF0BE5FDAEC6123BA(__this, /*hidden argument*/NULL);
+	}
+
+IL_005d:
+	{
 		// }
 		return;
 	}

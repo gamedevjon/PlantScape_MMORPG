@@ -19,7 +19,6 @@ public class Player : NetworkBehaviour
 
         Debug.Log("My speed on the client: " + _speed);
 
-        CmdInitPlayer();
 
         
     
@@ -36,6 +35,10 @@ public class Player : NetworkBehaviour
         var move = new Vector3(h, 0, v);
 
         transform.Translate(move * _speed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            CmdInitPlayer();
+
     }
 
     /// <summary>
@@ -49,6 +52,7 @@ public class Player : NetworkBehaviour
 
     /// <summary>
     /// The server will update the speed and then the client will call this message.
+    /// this could be used to update presentation logic on the client. Ex: running vfx, etc. 
     /// </summary>
     void OnChangeSpeed(float _old, float _new)
     {
