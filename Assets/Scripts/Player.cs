@@ -51,14 +51,14 @@ public class Player : NetworkBehaviour
     }
 
     /// <summary>
-    /// The server will update the speed and then the client will call this message.
-    /// this could be used to update presentation logic on the client. Ex: running vfx, etc. 
+    /// This is a callback function that the client calls. 
     /// </summary>
     void OnChangeSpeed(float _old, float _new)
     {
         Debug.Log("OnChangeSpeed::_old: " + _old);
         Debug.Log("OnChangeSpeed::_new: " + _new);
         Debug.Log("Just got word from the server that my speed is now:" + _speed);
+        _speed = _new;
     }
 
 

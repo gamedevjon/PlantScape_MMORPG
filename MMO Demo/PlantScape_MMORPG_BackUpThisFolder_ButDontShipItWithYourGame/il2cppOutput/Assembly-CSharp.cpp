@@ -9401,6 +9401,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m9DC58ADF0512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_SendCommandInternal_m913A3DC5BC6502F1F5A880B0178ACD0F00C40B10 (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, Type_t * ___invokeClass0, String_t* ___cmdName1, NetworkWriter_t9867BCC201B0E0EB4E85B70D8322BFCC7B1B5B0D * ___writer2, int32_t ___channelId3, bool ___requiresAuthority4, const RuntimeMethod* method);
 // System.Void Mirror.NetworkWriterPool::Recycle(Mirror.PooledNetworkWriter)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkWriterPool_Recycle_m6D8BEB44B64392960301FC8AAE1BA3C8FF7CB84A (PooledNetworkWriter_t5C3E4554285FF29054146CADF86AF9057BAEECC7 * ___writer0, const RuntimeMethod* method);
+// System.Void Player::set_Network_speed(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_set_Network_speed_mDA4EFFB2A203E0E8C3130F7EAA14241F203F0540 (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873 * __this, float ___value0, const RuntimeMethod* method);
 // System.Void Mirror.NetworkBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour__ctor_m879A9A6B52CB3B26F52EDC0BFDF997FAE742B375 (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, const RuntimeMethod* method);
 // System.Boolean Mirror.NetworkBehaviour::SyncVarEqual<System.Single>(!!0,!!0&)
@@ -9421,8 +9423,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkBehaviour_getSyncVarHookGuard_mEB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_setSyncVarHookGuard_mB1D400DCE8181E02BDBE397137BEB9CD08C4F085 (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, uint64_t ___dirtyBit0, bool ___value1, const RuntimeMethod* method);
 // System.Void Player::OnChangeSpeed(System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_OnChangeSpeed_mD9DC472DE2CAA2D6F1415C72373D4A81A6907E3E (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873 * __this, float ____old0, float ____new1, const RuntimeMethod* method);
-// System.Void Player::set_Network_speed(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_set_Network_speed_mDA4EFFB2A203E0E8C3130F7EAA14241F203F0540 (Player_t8321F4671F549F5A7793BB8BA33D32CCCD538873 * __this, float ___value0, const RuntimeMethod* method);
 // System.Boolean Mirror.NetworkServer::get_active()
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR bool NetworkServer_get_active_mFD743885E7CDA9B2E98FDC3528D99C6F04D44EF5_inline (const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::LogError(System.Object)
@@ -10518,6 +10518,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_OnChangeSpeed_mD9DC472DE2CAA2D6F1
 		RuntimeObject * L_10 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_9);
 		String_t* L_11 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteralF1954CAC3C45DB1C5884A4288599E17A6C077922, L_10, /*hidden argument*/NULL);
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_11, /*hidden argument*/NULL);
+		// _speed = _new;
+		float L_12 = ____new1;
+		Player_set_Network_speed_mDA4EFFB2A203E0E8C3130F7EAA14241F203F0540(__this, L_12, /*hidden argument*/NULL);
 		// }
 		return;
 	}
