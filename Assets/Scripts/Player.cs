@@ -10,5 +10,7 @@ public class Player : NetworkBehaviour
         base.OnStartLocalPlayer();
 
         Debug.Log("I'm connected!");
+
+        //Camera.main.transform.LookAt(transform);
     }
 }

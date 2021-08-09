@@ -298,8 +298,26 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshFilter",
+            "fullManagedTypeName": "UnityEngine.MeshFilter",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "SkinnedMeshRenderer",
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshRenderer",
+            "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity"
@@ -319,6 +337,33 @@
             "nativeClass": "AudioListener",
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Collider",
+            "fullManagedTypeName": "UnityEngine.Collider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider",
+            "fullManagedTypeName": "UnityEngine.BoxCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SphereCollider",
+            "fullManagedTypeName": "UnityEngine.SphereCollider",
+            "moduleName": "Physics",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity"
             ]
@@ -508,6 +553,13 @@
             "managedAssemblyName": "Mirror.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Mirror.NetworkManagerHUD",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Mirror.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Mirror.NetworkStartPosition",
             "moduleName": "",
             "usedInScenes": []
         },
