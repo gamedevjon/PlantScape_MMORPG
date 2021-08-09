@@ -300,13 +300,13 @@ static const Il2CppTokenRangePair s_rgctxIndices[1] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[7] = 
 {
-	{ (Il2CppRGCTXDataType)2, 29595 },
+	{ (Il2CppRGCTXDataType)2, 29596 },
+	{ (Il2CppRGCTXDataType)3, 26889 },
+	{ (Il2CppRGCTXDataType)3, 26890 },
 	{ (Il2CppRGCTXDataType)3, 26891 },
 	{ (Il2CppRGCTXDataType)3, 26892 },
 	{ (Il2CppRGCTXDataType)3, 26893 },
 	{ (Il2CppRGCTXDataType)3, 26894 },
-	{ (Il2CppRGCTXDataType)3, 26895 },
-	{ (Il2CppRGCTXDataType)3, 26896 },
 };
 extern const Il2CppCodeGenModule g_TelepathyCodeGenModule;
 const Il2CppCodeGenModule g_TelepathyCodeGenModule = 

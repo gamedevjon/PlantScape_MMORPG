@@ -31409,22 +31409,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_SetSyncVar_TisColor32_t
 		return;
 	}
 }
-// System.Void Mirror.NetworkBehaviour::SetSyncVar<UnityEngine.Color>(T,T&,System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_SetSyncVar_TisColor_t119BCA590009762C7223FDD3AF9706653AC84ED2_mDCE92847ECD527C0334D145E48ABBFB8DCE8A375_gshared (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___value0, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * ___fieldValue1, uint64_t ___dirtyBit2, const RuntimeMethod* method)
-{
-	{
-		// SetDirtyBit(dirtyBit);
-		uint64_t L_0 = ___dirtyBit2;
-		NullCheck((NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 *)__this);
-		NetworkBehaviour_SetDirtyBit_mB0BD6C51B896F663D1255CE858F98682866B4E97((NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 *)__this, (uint64_t)L_0, /*hidden argument*/NULL);
-		// fieldValue = value;
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * L_1 = ___fieldValue1;
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_2 = ___value0;
-		*(Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 *)L_1 = L_2;
-		// }
-		return;
-	}
-}
 // System.Void Mirror.NetworkBehaviour::SetSyncVar<UnityEngine.Quaternion>(T,T&,System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkBehaviour_SetSyncVar_TisQuaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357_m0045F81F56B9F68C41FAB86BD290E301690B6306_gshared (NetworkBehaviour_tD8839270656D1FAAD806F2AADCB549AC391ADC83 * __this, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  ___value0, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 * ___fieldValue1, uint64_t ___dirtyBit2, const RuntimeMethod* method)
 {

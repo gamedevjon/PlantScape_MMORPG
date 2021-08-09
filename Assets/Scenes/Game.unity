@@ -184,7 +184,7 @@ MonoBehaviour:
   Port: 7777
   NoDelay: 1
   Interval: 10
-  Timeout: 10000
+  Timeout: 30000
   FastResend: 2
   CongestionWindow: 0
   SendWindowSize: 4096
@@ -217,7 +217,7 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 801555655980315617, guid: bd496e3db5bcbb745bc2e848597dddae,
+  playerPrefab: {fileID: 2743857843060707972, guid: 7bb5c906caadef442a62c18c2066a7b7,
     type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
