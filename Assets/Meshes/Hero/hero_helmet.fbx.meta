@@ -3,7 +3,17 @@ guid: c6e2be13b44461446af72ec20bf22196
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hero_Oxygen_M
+    second: {fileID: 2100000, guid: 5d958d33121ca794f9d762f6a6a52f2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hero_VisorGlass_M
+    second: {fileID: 2100000, guid: d65ad79ed625f31419f7120944887bae, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
