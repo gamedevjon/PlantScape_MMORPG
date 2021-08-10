@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9070a8f24b3bec34189352d905e473f8
+guid: c2520f285a03b64428076ff4411e26f0
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: small_axe_M
-    second: {fileID: 2100000, guid: ac1b8f5a2bf1f26499cd9945d8ab3cb2, type: 2}
+      name: crate_M
+    second: {fileID: 2100000, guid: ea0580acf47074d4bb0217448d80bedc, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
