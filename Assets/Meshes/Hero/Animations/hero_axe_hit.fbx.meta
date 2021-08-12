@@ -73,7 +73,7 @@ ModelImporter:
       name: axe_hit_loop_hero
       takeName: Take 001
       internalID: 0
-      firstFrame: 30
+      firstFrame: 15
       lastFrame: 45
       wrapMode: 0
       orientationOffsetY: 0
